@@ -1,0 +1,7 @@
+@startuml
+object 注册登录{
+    用户名="root"
+    密码="nnnnnn"
+    验证码="OJBK"
+}
+@enduml
