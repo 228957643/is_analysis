@@ -1,0 +1,38 @@
+@startuml
+hide footbox
+title 借阅图书顺序图
+actor 图书管理员 as user
+activate user
+user->读者:读者是否登录
+activate 读者
+deactivate 读者
+user->读者:是否存在不良记录
+activate 读者
+deactivate 读者
+user->读者:是否超出借阅上限
+activate 读者
+deactivate 读者
+loop 借阅操作主体
+user->馆藏资源品种:获取资源项
+activate 馆藏资源品种
+馆藏资源品种->图书:查找对应图书
+activate 图书
+deactivate 图书
+deactivate 馆藏资源品种
+user->借阅记录:创建借阅记录
+activate 借阅记录
+deactivate 借阅记录
+user->馆藏资源品种:借出馆藏资源
+activate 馆藏资源品种
+馆藏资源品种->图书:减少可借数量
+activate 图书
+deactivate 图书
+deactivate 馆藏资源品种
+user->读者:读者借阅限量-1
+activate 读者
+deactivate 读者
+end
+user->借阅记录:完成本次借阅操作
+activate 借阅记录
+deactivate 借阅记录
+@enduml

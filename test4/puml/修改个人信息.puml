@@ -1,0 +1,30 @@
+@startuml
+hide footbox
+title 修改个人信息顺序图
+actor 系统管理员 as user
+activate user
+user->读者:读者是否登录
+activate 读者
+读者->浏览器:进入个人主页
+activate 浏览器
+浏览器->服务器:请求数据
+activate 服务器
+服务器->数据库:获取读者个人信息
+activate 数据库
+deactivate 数据库
+deactivate 服务器
+deactivate 浏览器
+读者->浏览器:修改个人信息
+activate 浏览器
+浏览器->服务器:执行sql语句
+activate 服务器
+服务器->数据库:更新读者信息
+activate 数据库
+deactivate 数据库
+deactivate 服务器
+deactivate 浏览器
+deactivate 读者
+user->数据库:用户修改个人信息成功
+activate 数据库
+deactivate 数据库
+@enduml

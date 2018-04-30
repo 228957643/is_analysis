@@ -1,0 +1,37 @@
+@startuml
+hide footbox
+title 注册登录顺序图
+actor 读者 as rd
+activate rd
+rd->浏览器:输入账号
+activate 浏览器
+rd->浏览器:输入密码
+rd->浏览器:输入验证码
+浏览器->服务器:请求注册
+activate 服务器
+服务器->数据库:账号是否存在
+activate 数据库
+数据库-->服务器:账号不存在
+deactivate 数据库
+服务器-->浏览器:注册成功
+deactivate 服务器
+deactivate 浏览器
+rd->数据库:新增读者注册信息
+activate 数据库
+deactivate 数据库
+rd->浏览器:输入账号
+activate 浏览器
+rd->浏览器:输入密码
+浏览器->服务器:请求登录
+activate 服务器
+服务器->数据库:账号密码是否匹配
+activate 数据库
+数据库-->服务器:账号密码正确
+deactivate 数据库
+服务器-->浏览器:登录成功
+deactivate 服务器
+deactivate 浏览器
+rd->浏览器:进入首页
+activate 浏览器
+deactivate 浏览器
+@enduml

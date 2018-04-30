@@ -1,0 +1,19 @@
+@startuml
+hide footbox
+title 续借图书顺序图
+actor 图书管理员 as user
+activate user
+user->读者:读者是否登录
+activate 读者
+deactivate 读者
+user->借阅记录:获取读者借阅信息
+activate 借阅记录
+借阅记录->图书:选中目标图书并点击续借
+activate 图书
+借阅记录->图书:是否已经续借过一次（最多一次）
+deactivate 图书
+deactivate 借阅记录
+user->借阅记录:续借成功，归还时间增加
+activate 借阅记录
+deactivate 借阅记录
+@enduml
