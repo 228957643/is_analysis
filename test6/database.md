@@ -15,6 +15,8 @@
 |create_time|datetime|||是|注册时间|
 |update_time|datetime|||是|修改时间|
 
+<br /><br />
+
 
 ## teacher 表（教师表）
 |字段名|类型|长度|主键|是否为空|备注|
@@ -29,6 +31,7 @@
 |create_time|datetime|||是|注册时间|
 |update_time|datetime|||是|修改时间|
 
+<br /><br />
 
 ## course 表（课程表）
 |字段名|类型|长度|主键|是否为空|备注|
@@ -43,6 +46,7 @@
 |term|varchar|32||否|开课学期|
 |create_time|datetime|||是|创建时间|
 
+<br /><br />
 
 ## choice_course 表（选课表）
 |字段名|类型|长度|主键|是否为空|备注|
@@ -53,6 +57,7 @@
 |teacher_id|varchar|12|外键|否|教师编号|
 |create_time|datetime|||否|选课时间|
 
+<br /><br />
 
 ## project 表（实验表）
 |字段名|类型|长度|主键|是否为空|备注|
@@ -69,6 +74,7 @@
 |teacher_id|varchar|12|外键|否|教师id|
 |create_time|datetime|||否|添加时间|
 
+<br /><br />
 
 ## grade 表（评分项表）
 |字段名|类型|长度|主键|是否为空|备注|
@@ -83,3 +89,5 @@
 |remark|varchar|255||否|批改评价|
 |grade|double|||是|得分|
 |update_time|datetime|||否|批改时间|
+
+<br /><br />
