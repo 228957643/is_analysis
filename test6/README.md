@@ -20,17 +20,17 @@
 ## 2. 系统总体结构
 ![](./images/bookManageSystem.png)
 
-<!--
+
 界面设计参见：https://zwdbox.github.io/is_analysis/test6/ui/index.html
     
-## 3. 用例图设计 [源码](src/UseCase.puml)
-![](UseCase.png)
+## 3. 用例图设计 [源码](puml/useCase.puml)
+![](images/useCase.png)
 
-## 4. 类图设计 [源码](src/class.puml)
-![](./class.png)
+## 4. 类图设计 [源码](puml/class.puml)
+![](images/class.png)
 
 ## 5. 数据库设计
-- ### [参见数据库设计](./数据库设计.md)
+- ### [参见数据库设计](database.md)
 
 ## 6. 用例及界面详细设计
 - ### [“学生列表”用例](./用例/学生列表.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/index.html)
@@ -41,4 +41,3 @@
 - ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
 - ### [“登出”用例](./用例/登出.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
 - ### [“登录”用例](./用例/登录.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/登录.html)
-    -->

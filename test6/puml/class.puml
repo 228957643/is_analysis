@@ -1,0 +1,60 @@
+@startuml
+title 基于GitHub的图书管理平台--类图
+class 用户 {
+    <b>user_id</b> （用户ID）
+    name （用户真实姓名）
+    account（用户名）
+    sex（性别）
+    birthday（生日）
+    github_username （用户GitHub账号）
+    update_date （用户GitHub账号修改日期）
+    password （用户密码）
+}
+class 教师{
+    <b>job_id</b> （老师工号）
+    department （老师所属部门）
+}
+class 学生{
+    <b>student_id</b> （学号）
+    class （班级）
+}
+class 课程{
+    <b>course_id</b>（课程id）
+    course_name（课程名称）
+    teacher_id（教师id）
+    teacher_name（教师名称）
+    credit（课程学分）
+    period（课程学时）
+    term（开课学期）
+    position（上课地点）
+    create_time（创建时间）
+}
+用户 <|- 学生
+用户 <|-- 教师
+学生 "1" -- "n"  课程
+教师 "1" -- "n"  课程
+class 评分项 {
+    <b>id</b> （评分项id）
+    stu_id（学生id）
+    project_id（实验id）
+    teacher_id（教师id）
+    scoring_item（评分项）
+    sco_item_desc（评分项描述）
+    remark（批改评价）
+    grade（评分项分数）
+    update_time（批改时间）
+}
+class 实验 {
+    <b>project_id</b> （实验编号）
+    project_name（实验名称）
+    term（开课学期）
+    weight（实验权重）
+    grade（实验得分）
+    description（实验描述）
+    course_id（课程id）
+    teacher_id（教师id）
+    title (实验名称)
+}
+学生 "1" -- "n"  实验
+实验 "1" -- "n"  评分项
+@enduml
