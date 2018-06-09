@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/login.css"/>
+</head>
+<body>
+<div id="top_list">
+    <div id="tl_width">
+        <div id="blog_name">信息系统分析与设计</div>
+        <ul>
+            <li><a href="top.html">返回上一页</a></li>
+            <li><a href="../index.html">返回首页</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--登录主体-->
+<div id="div_login">
+    <!--标题-->
+    <div id="login_title">
+        Login
+    </div>
+    <!--表单-->
+    <div id="login_form">
+        <form action="#" method="post" onsubmit="javascript:return false;">
+            <table>
+                <tr>
+                    <td>Student_id:</td>
+                    <td><input type="text" required="required" name="account" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" required="required" name="password" placeholder=""></td>
+                </tr>
+            </table>
+            <!--记住密码-->
+            <div id="rember_pwd">
+                <input type="checkbox" name="" id="rem" placeholder="">
+                <label for="rem">Remember Your Password?</label>
+            </div>
+            <!--登录按钮-->
+            <div id="login_submit">
+                <input type="submit" value="Login" onclick="javascript:alert('登录成功')">
+                <a href="javascript:void(0)">Forget Passwrod?</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

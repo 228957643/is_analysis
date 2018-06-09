@@ -1,0 +1,66 @@
+#top_desc{
+    color: #009900;
+}
+#content a{
+    color: orange;
+}
+#top{
+    width:1000px;
+    height:40px;
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 8px;
+    float: left;
+    margin-top: 20px;
+
+}
+.explain{
+    color: red;
+    font-size: 14px;
+}
+#tep{
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.stu_body_explain{
+    margin-top: 40px;
+    font-size: 24px;
+    color: green;
+    font-weight: 700;
+}
+.stu_body{
+    clear: both;
+}
+.stu_body table td{
+    width:140px;
+    text-align: center;
+}
+
+.clearBoth{
+    clear: both;
+}
+
+#getStuInfo{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#show{
+    width:400px;
+    min-height:180px;
+    background-color: #cccccc;
+    display: none;
+    margin: 0 auto;
+}
+#show_title{
+    font-size: 22px;
+    margin-left:20px;
+}
+#show div{
+    margin-top: 10px;
+    margin-left:40px;
+}
