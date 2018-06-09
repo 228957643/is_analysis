@@ -33,10 +33,10 @@
 - ### [参见数据库设计](database.md)
 
 ## 6. 用例及界面详细设计
-- ### [“学生列表”用例](./用例/学生列表.md),[界面](http://120.78.158.118/is_analysis/index.html)
-- ### [“评定成绩”用例](./用例/评定成绩.md),[界面](http://120.78.158.118/is_analysis/html/grade.html)
-- ### [“查看成绩”用例](./用例/查看成绩.md),[界面](http://120.78.158.118/is_analysis/html/showGrade.html)
-- ### [“修改密码”用例](./用例/修改密码.md),[界面](http://120.78.158.118/is_analysis/html/top.html)
-- ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](http://120.78.158.118/is_analysis/html/top.html)
-- ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](http://120.78.158.118/is_analysis/html/top.html)
-- ### [“登录”用例](./用例/登录.md),[界面](http://120.78.158.118/is_analysis/html/login.html)
+- ### [“学生列表”用例](./md/学生列表.md),[界面](http://120.78.158.118/is_analysis/index.html)
+- ### [“评定成绩”用例](./md/评定成绩.md),[界面](http://120.78.158.118/is_analysis/html/grade.html)
+- ### [“查看成绩”用例](./md/查看成绩.md),[界面](http://120.78.158.118/is_analysis/html/showGrade.html)
+- ### [“修改密码”用例](./md/修改密码.md),[界面](http://120.78.158.118/is_analysis/html/top.html)
+- ### [“修改用户信息”用例](./md/修改用户信息.md),[界面](http://120.78.158.118/is_analysis/html/top.html)
+- ### [“查看用户信息”用例](./md/查看用户信息.md),[界面](http://120.78.158.118/is_analysis/html/top.html)
+- ### [“登录”用例](./md/登录.md),[界面](http://120.78.158.118/is_analysis/html/login.html)

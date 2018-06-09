@@ -1,5 +1,5 @@
 @startuml
-title 基于GitHub的图书管理平台--类图
+title 基于GitHub的实验管理平台--类图
 class 用户 {
     <b>user_id</b> （用户ID）
     name （用户真实姓名）

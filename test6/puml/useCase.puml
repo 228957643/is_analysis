@@ -1,5 +1,5 @@
 @startuml
-title 基于GitHub的图书管理平台--用例图
+title 基于GitHub的实验管理平台--用例图
 actor 教师
 actor 学生
 actor 用户

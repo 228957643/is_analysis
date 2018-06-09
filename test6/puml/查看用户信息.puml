@@ -1,0 +1,12 @@
+@startuml
+title 基于GitHub的实验管理平台--查看用户信息用例的顺序图
+actor 用户 as u
+== 查看用户信息 ==
+u -> 服务器 : 登录系统
+服务器->服务器:是学生
+服务器->student:获取学生的个人信息
+student->u:返回学生个人信息
+服务器->服务器:是教师
+服务器->teacher:获取教师个人信息
+teacher->u:返回教师个人信息
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+title 基于GitHub的实验管理平台--登录用例的顺序图
+actor 读者 as rd
+
+rd->浏览器:输入账号
+activate 浏览器
+rd->浏览器:输入密码
+浏览器->服务器:请求登录
+activate 服务器
+服务器->数据库:账号密码是否匹配
+activate 数据库
+数据库-->服务器:账号密码正确
+deactivate 数据库
+服务器-->浏览器:登录成功
+deactivate 服务器
+deactivate 浏览器
+rd->浏览器:进入首页
+activate 浏览器
+deactivate 浏览器
+@enduml
