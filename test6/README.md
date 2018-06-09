@@ -11,7 +11,7 @@
 页面上。
 - 学生的功能主要有：一是设置自己的GitHub用户名，二是查询自己的实验成绩，三是通过本网站选课。学生的GitHub用户名是公开的，但成绩不公开。
 - 老师的功能主要有：一是批改每个学生的成绩，二是查看每个学生的成绩，三是通过本网站选课。
-- 本网站实现了多课程，多学期，多实验，多评分项等强大的功能。（老师优先选课，学生选课后自动生成对应课程的授课老师）
+- <b>本网站实现了多课程，多学期，多实验，多评分项等强大的功能。（老师优先选课，学生选课后自动生成对应课程的授课老师）</b>
 - 老师和学生都能通过本系统的链接方便地跳转到学生的每个GitHUB实验目录，以便批改实验或者查看实验情况。
 - 实验成绩按数字分数计算，每项实验的满分为100分，最低为0分。
 - 系统自动计算每个学生的所有实验的平均分。
@@ -21,7 +21,7 @@
 ![](./images/bookManageSystem.png)
 
 
-界面设计参见：https://zwdbox.github.io/is_analysis/test6/ui/index.html
+界面设计参见：http://120.78.158.118/is_analysis/index.html
     
 ## 3. 用例图设计 [源码](puml/useCase.puml)
 ![](images/useCase.png)
@@ -33,11 +33,10 @@
 - ### [参见数据库设计](database.md)
 
 ## 6. 用例及界面详细设计
-- ### [“学生列表”用例](./用例/学生列表.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/index.html)
-- ### [“评定成绩”用例](./用例/评定成绩.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/评定成绩.html)
-- ### [“查看成绩”用例](./用例/查看成绩.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/查看成绩.html)
-- ### [“修改密码”用例](./用例/修改密码.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
-- ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
-- ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
-- ### [“登出”用例](./用例/登出.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
-- ### [“登录”用例](./用例/登录.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/登录.html)
+- ### [“学生列表”用例](./用例/学生列表.md),[界面](http://120.78.158.118/is_analysis/index.html)
+- ### [“评定成绩”用例](./用例/评定成绩.md),[界面](http://120.78.158.118/is_analysis/html/grade.html)
+- ### [“查看成绩”用例](./用例/查看成绩.md),[界面](http://120.78.158.118/is_analysis/html/showGrade.html)
+- ### [“修改密码”用例](./用例/修改密码.md),[界面](http://120.78.158.118/is_analysis/html/top.html)
+- ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](http://120.78.158.118/is_analysis/html/top.html)
+- ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](http://120.78.158.118/is_analysis/html/top.html)
+- ### [“登录”用例](./用例/登录.md),[界面](http://120.78.158.118/is_analysis/html/login.html)
